@@ -107,6 +107,7 @@ a {
 
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -342,6 +343,7 @@ a {
     font-size: 1.7rem;
   }
 }
+
 
 
 
