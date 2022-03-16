@@ -10,8 +10,368 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/CSS/normalize.css" />
-    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
     <title>Adobe</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/"
+          ><img
+            class="adobo-logo"
+            src="images/creative-cloud-cc.svg"
+            alt="Adobe logo"
+        /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Creativity & Design</a></li>
+          <li class="nav__item"><a href="#">PDF & E-signatures</a></li>
+          <li class="nav__item"><a href="#">Marketing & Commerce</a></li>
+          <li class="nav__item"><a href="#">Help & Support</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="block block--dark block--skewed-left hero">
+        <div class="container grid grid--1x2">
+          <header class="block__header hero__content">
+            <h1 class="block__heading">CREATIVE CLOUD FOR TEAMS</h1>
+            <p class="hero__tagline">
+              Build your brand and grow your business with the world’s best
+              creative apps and services that make working together better than
+              ever
+            </p>
+            <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+          </header>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/adobe1x.webp 1x, images/adobe2x.webp 2x"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/adobe1x.jpg 1x, images/adobe2x.jpg 2x"
+            />
+            <img class="hero__image" src="images/adobe3x.jpeg" alt="" />
+          </picture>
+        </div>
+      </section>
+      <section class="block container block-app">
+        <header class="block__header">
+          <h2>Search for an app</h2>
+          <p>Example of app names are listed below. Begin typing to search!</p>
+        </header>
+        <div class="input-group">
+          <input
+            type="text"
+            class="input"
+            placeholder="Enter app name here..."
+          />
+          <button class="btn btn--accent">
+            <svg class="icon icon--white">
+              <use xlink:href="images/sprite.svg#search"></use></svg
+            >Search
+          </button>
+        </div>
+        <ul class="list block-adobe_apps">
+          <li><span>.Photoshop</span></li>
+          <li>.PremierPro</li>
+          <li>.Reader</li>
+          <li>.AcrobatPro</li>
+          <li>.Dreamweaver</li>
+          <li>.Aero</li>
+        </ul>
+      </section>
+
+      <section class="block container block-plans">
+        <div class="grid grid--1x3">
+          <div class="plan">
+            <div class="card card--secondary">
+              <header class="card__header">
+                <h3 class="plan__name">Standard Plan</h3>
+                <span class="plan__price">$20</span>
+                <span class="plan__billing-cycle">/Year</span>
+                <span class="badge badge--secondary badge--small">10% OFF</span>
+                <span class="plan__description">1 app (1/15) apps</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">Free Registration</li>
+                  <li class="list__item">1 Bonus Feature</li>
+                  <li class="list__item">100 GB CLOUD Sotrage</li>
+                </ul>
+                <button class="btn btn--outline btn--block">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="plan plan--popular">
+            <div class="card card--primary">
+              <header class="card__header">
+                <h3 class="plan__name">Best Plan</h3>
+                <span class="plan__price">$40</span>
+                <span class="plan__billing-cycle">/Year</span>
+                <span class="badge badge--primary badge--small">10% OFF</span>
+                <span class="plan__description">All Apps (15/15) apps</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">Free Registration</li>
+                  <li class="list__item">7 Bonus Features</li>
+                  <li class="list__item">500 GB CLOUD Sotrage</li>
+                  <li class="list__item">All Apps</li>
+                </ul>
+                <button class="btn btn--outline btn--block">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="card card--secondary">
+              <header class="card__header">
+                <h3 class="plan__name">Good Plan</h3>
+                <span class="plan__price">$30</span>
+                <span class="plan__billing-cycle">/Year</span>
+                <span class="badge badge--secondary badge--small">10% OFF</span>
+                <span class="plan__description">6 apps (6/15) apps</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">Free Registration</li>
+                  <li class="list__item">3 Bonus Features</li>
+                  <li class="list__item">300 GB CLOUD Sotrage</li>
+                </ul>
+                <button class="btn btn--outline btn--block">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      //
+      <section class="block container">
+        <header class="block__header">
+          <h2>Work better as a team</h2>
+          <p>
+            Collaborate efficiently with integrated tools and services made just
+            for teams.
+          </p>
+        </header>
+        <article class="grid grid--1x2 feature">
+          <div class="feature__content">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprites.svg#library"></use>
+              </svg>
+            </span>
+            <h3 class="feature__heading">Team libraries</h3>
+            <p>
+              Share assets across your team and control editing access to keep
+              branding consistent.
+            </p>
+            <a href="#" class="link-arrow">Learn More</a>
+          </div>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
+            />
+            <img class="feature__image" src="images/easy@2x.jpg" alt="" />
+          </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+          <div class="feature__content">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprites.svg#collab"></use>
+              </svg>
+            </span>
+            <h3 class="feature__heading">Easy collaboration</h3>
+            <p>
+              Share previews for comments, edit together, restore past versions
+              for 180 days, and get real-time video feedback with Frame.io.
+            </p>
+            <a href="#" class="link-arrow">Learn More</a>
+          </div>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x"
+            />
+            <img class="feature__image" src="images/fast@2x.jpg" alt="" />
+          </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+          <div class="feature__content">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprites.svg#Inta"></use>
+              </svg>
+            </span>
+            <h3 class="feature__heading">Business app integration</h3>
+            <p>
+              Be more productive with Microsoft Power Automate, Microsoft Teams,
+              Confluence, Slack, and more.
+            </p>
+            <a href="#" class="link-arrow">Learn More</a>
+          </div>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x"
+            />
+            <img class="feature__image" src="images/wordpress@2x.jpg" alt="" />
+          </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+          <div class="feature__content">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprites.svg#autos"></use>
+              </svg>
+            </span>
+            <h3 class="feature__heading">Auto-save to the cloud</h3>
+            <p>
+              Cloud documents and libraries are auto-saved to cloud storage so
+              you can pick up wherever you left off.
+            </p>
+            <a href="#" class="link-arrow">Learn More</a>
+          </div>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/support.webp 1x, images/support@2x.webp 2x"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/support.jpg 1x, images/support@2x.jpg 2x"
+            />
+            <img class="feature__image" src="images/support@2x.jpg" alt="" />
+          </picture>
+        </article>
+      </section>
+      <section class="block">
+        <header class="block__header">
+          <h2>Get to know the designer</h2>
+          <p>
+            Since this is a simple adobe redesign mock-up project of an adobe
+            web-page...
+          </p>
+        </header>
+        <div class="container">
+          <div class="card testimonial">
+            <div class="grid grid--1x2">
+              <div class="testimonial__image">
+                <img src="images/Ibrar.jpg" alt="A happy, smiling customer" />
+                <span class="icon-container icon-container--accent">
+                  <svg class="icon icon--white icon--small">
+                    <use xlink:href="images/sprites.svg#quotes"></use>
+                  </svg>
+                </span>
+              </div>
+              <blockquote class="quote">
+                <p class="quote__text">
+                  I am an undergraduate student that will be turning 22 by this
+                  summer and is passionate about coding. As of right now, I have
+                  completed projects in Java and in HTML&CSS! I am currently
+                  still learning new languages. I plan to learn React, Python
+                  and React native. Frontend as of right now is my main focus
+                  because I really enjoy the process of designing web pages.
+                </p>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary quote__line">
+                      <use xlink:href="images/sprites.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">Ibrar Sandhu</h3>
+                    <p class="quote__organization">undergradute</p>
+                  </div>
+                </div>
+    </main>
+    <footer>
+      <footer class="block block--dark footer">
+        <div class="container grid footer__sections">
+          <section class="collapsible collapsible--expanded footer__section">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">Education</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="images/sprite.svg#chevron"></use>
+              </svg>
+            </header>
+            <div class="collapsible__content">
+              <ul class="list">
+                <li><a href="https://www.adobe.com/ca/creativecloud/buy/students.html">Discounts for students</a></li>
+                <li><a href="https://www.adobe.com/ca/education.html?marketSegment=EDU">Schools and Universities</a></li>
+                <li><a href="https://www.adobe.com/ca/elearning.html">Digital learning solutions</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="collapsible footer__section">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">Adobe</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="images/sprite.svg#chevron"></use>
+              </svg>
+            </header>
+            <div class="collapsible__content">
+              <ul class="list">
+                <li><a href="https://www.adobe.com/ca/about-adobe.html">About</a></li>
+                <li><a href="https://www.adobe.com/careers.html">Careers</a></li>
+                <li><a href="https://www.adobe.com/ca/events.html">Events</a></li>
+                <li><a href="https://www.adobe.com/ca/about-adobe/integrity.html">Integrity</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="collapsible footer__section">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">Support</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="images/sprite.svg#chevron"></use>
+              </svg>
+            </header>
+            <div class="collapsible__content">
+              <ul class="list">
+                <li><a href="https://helpx.adobe.com/ca/download-install.html">Downloads</a></li>
+                <li><a href="https://helpx.adobe.com/ca/support.html">Help Center</a></li>
+                <li><a href="https://www.adobe.com/ca/genuine.html">Genuine Software</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="collapsible footer__section">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">Experience Cloud</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="images/sprite.svg#chevron"></use>
+              </svg>
+            </header>
+            <div class="collapsible__content">
+              <ul class="list">
+                <li><a href="https://business.adobe.com/ca/products/analytics/adobe-analytics.html">Analytics</a></li>
+                <li><a href="https://business.adobe.com/ca/products/magento/magento-commerce.html">Commerce</a></li>
+                <li><a href="https://www.workfront.com/">Workfront</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="footer__brand">
+            <img src="images/Adobe_Corporate_Horizontal_Red_HEX.svg" alt="" />
+            <p class="footer__copyright">Copyright 2022 Adobe Studios</p>
+          </section>
+        </div>
+      </footer>
+    </footer>
+    <script src="/JS/main.js"></script>
+  </body>
 </html>
